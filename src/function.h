@@ -16,10 +16,7 @@ void buttonState(Btn &btn)
 
 void printPixelData(Pixel &pix)
 {
-  // for (int i = 0; i < xcnt; ++i)
-  // { // 配列の要素数分ループ
-  //   // Serial.println("x[" + String(pix.name[i]) + "] = " + String(pix.x[i]++));
-  // }
+
   Serial.print(">red:");
   Serial.println(String(pix.red));
   Serial.print(">green:");
@@ -39,10 +36,6 @@ void printPixelData(Pixel &pix)
   Serial.print(">lastState:");
   Serial.println(String(btn[0].lastState));
 
-  // Serial.println(btn[0].State);
-  // Serial.println(btn[0].mode);
-  // Serial.println(btn[0].pin);
-  // Serial.println(btn[0].lastState);
 }
 
 void disp_sidebar(Pixel &pix)

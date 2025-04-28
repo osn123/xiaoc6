@@ -5,8 +5,9 @@
 
 #define PIN 22
 #define PIN2 18       // INが接続されているピンを指定
+
 #define NUMPIXELS 7 // LEDの数を指定
-#define NUMPIXELS2 4 // LEDの数を指定
+#define NUMPIXELS2 10 // LEDの数を指定
 
 // Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_RGBW + NEO_KHZ800);
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_RGB + NEO_KHZ800);
@@ -19,7 +20,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET); // I2C
 
 // const int button[] = {13,14,15,16,17,18,19}; // ボタンピンNo
 // const int button[] = {17, 13, 16, 14, 15, 18, 19}; // ボタンピンNo
-const int button[] = {23,16,21,17}; // ボタンピンNo
+const int button[] = {17,1,23,0}; // ボタンピンNo
 
 // int buttonState1 = 0;     // ボタン1の状態を保持する変数
 // int lastButtonState1 = 0; // ボタン1の直前の状態を保持する変数
@@ -28,11 +29,11 @@ const int button[] = {23,16,21,17}; // ボタンピンNo
 // int lastmode = 0; // 現在のモードを示す変数
 
 int i = 0;
-unsigned long previousMillis = 0;
+//unsigned long previousMillis = 0;
 const long interval = 500; // インターバルを1秒に設定
 
 // volatile bool buttonPressed = false; // ボタンが押されたかどうかを示すフラグ
-int const xcnt = 10;
+int const xcnt = 7;
 
 // int const SDApinNo = 21;
 // int const SCLpinNo = 22;
